@@ -14,17 +14,31 @@ Based on our models and analysis, we recommend that if rennovations are going to
 
 # Step 1: Data Understanding
 
-We will analyze the 2022 data from King's Country to try and offer accurate recommendations.
+To make our recommendations, we analyzed the 2022 data from King's County.
 
-We begin by importing the proper tools and then the data itself.
+The dataset has 30155 entries and 25 columns with a mix of string values, floats, and integers. Bathrooms as float makes sense, but "floors" as float seems odd. It was also not clear what elements were contained in some of the object categories like "grade" or "nuisance." There were also some missing entries for "sewer_system" and "heat_source." Some odd things we noticed initially is that there were houses without bedrooms or bathrooms. There were also outliers on the larger end as well, with houses containing 13 bedrooms and 10.5 bathrooms. There was even a house listed with only 3sqft of living space. It also became clear that we were going to need to seperate out the houses that already have garages from those that do not.
+
+
+
+Given that are focus is on garages, it's important to note that there are both houses with no garages or which have never been renovated. In narrowing down, we noticed that columns like "waterfront" and "greenbelt" had a small number of entries, so they probably would not add much to our analysis. Additionally, given time constraints, we wouldn't be able to spend time on categories like "date, view, sqft_above, sqft_basement, address, lat, and long." We ended up focusing primarily on "yr_renovated," "condition," "grade," and, especially, "sqft_living" as categories in order to build the most accurate model.
 
 # Step 2: Data Preperation
 
-* In preparing the data, we will primarily focus on elements we think will affect our numbers involving renovations broadly, and garage additions more specifically. Since we are dealing with both continuous numbers and integers, we may end up needing some log transformations. We will test our model by looking at the correlation between price per sqft of house. According to according to the website www.fixr.com the cost of building a home in California is roughly "400 and 600 per square foot." So that will be a good target for checking the accuracy of our data prep.
+In preparing the data, we focused on elements we thought would affect our numbers involving renovations broadly, and garage additions more specifically. Since we were dealing with both continuous numbers and integers, experimented with log transformations, but didn't find their adjustments useful and getting a more acurate model. To check the accuracy of our model, we focused primarily on the correlation between price per sqft of house. According to according to the website www.fixr.com the cost of building a home in California is roughly "400 and 600 per square foot." So we thought that would be a good target for checking the accuracy of our data prep.
+
+With price as our major target, we set it as our Y and looked for correlations with the other columns as our x's.
+
+
+
+Since scatterplots are more useful at visualizing the relationship with continuous data, we adjusted columns like "grade" and "condition" by turning them from strings to integers which allowed our model to see the relationship between the numbers more clearly and hopefully give us more accuracy. We then dealt with outliers which filtered out 2513 rows from our set of 30155.
+
+We then created new columns checking for which houses had garages, and which ones didn't, in addition to a new column for garages based on size (either 1-car, 2-car, or 3-car).
 
 # Data Modeling
 
-Now with our data prepared and in hand, it's time to create some models. First, we will check to see the accuracy of our data preperation by checking price per sqft.
+Now with our data prepared and in hand, we created some models. First, we checked to see the accuracy of our data preperation by checking price per sqft.
+
+
 
 # Data Understanding
 
