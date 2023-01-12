@@ -40,6 +40,8 @@ Now with our data prepared and in hand, we created some models. First, we checke
 
 ![Model1](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/Model%201.JPG)
 
+So it looks like the coefficient is within the right range, but the R-squared is very low. However, it seems that transforming the numbe logarithmically actually lowers are R-value. So we kept it as it was and then added our other variables until we achieved the highest R-value given our selected data:
+
 ![Model2](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/model%202.JPG)
 
 # Data Understanding
