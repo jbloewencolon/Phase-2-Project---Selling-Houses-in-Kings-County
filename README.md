@@ -18,7 +18,7 @@ To make our recommendations, we analyzed the 2022 data from King's County.
 
 The dataset has 30155 entries and 25 columns with a mix of string values, floats, and integers. Bathrooms as float makes sense, but "floors" as float seems odd. It was also not clear what elements were contained in some of the object categories like "grade" or "nuisance." There were also some missing entries for "sewer_system" and "heat_source." Some odd things we noticed initially is that there were houses without bedrooms or bathrooms. There were also outliers on the larger end as well, with houses containing 13 bedrooms and 10.5 bathrooms. There was even a house listed with only 3sqft of living space. It also became clear that we were going to need to seperate out the houses that already have garages from those that do not.
 
-
+![heatmap](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/heatmap.JPG)
 
 Given that are focus is on garages, it's important to note that there are both houses with no garages or which have never been renovated. In narrowing down, we noticed that columns like "waterfront" and "greenbelt" had a small number of entries, so they probably would not add much to our analysis. Additionally, given time constraints, we wouldn't be able to spend time on categories like "date, view, sqft_above, sqft_basement, address, lat, and long." We ended up focusing primarily on "yr_renovated," "condition," "grade," and, especially, "sqft_living" as categories in order to build the most accurate model.
 
@@ -28,7 +28,7 @@ In preparing the data, we focused on elements we thought would affect our number
 
 With price as our major target, we set it as our Y and looked for correlations with the other columns as our x's.
 
-
+![plots](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/multiple%20regression.JPG)
 
 Since scatterplots are more useful at visualizing the relationship with continuous data, we adjusted columns like "grade" and "condition" by turning them from strings to integers which allowed our model to see the relationship between the numbers more clearly and hopefully give us more accuracy. We then dealt with outliers which filtered out 2513 rows from our set of 30155.
 
@@ -38,7 +38,9 @@ We then created new columns checking for which houses had garages, and which one
 
 Now with our data prepared and in hand, we created some models. First, we checked to see the accuracy of our data preperation by checking price per sqft.
 
+![Model1](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/Model%201.JPG)
 
+![Model2](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/model%202.JPG)
 
 # Data Understanding
 
