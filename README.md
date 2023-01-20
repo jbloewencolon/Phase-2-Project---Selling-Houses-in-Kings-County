@@ -1,4 +1,4 @@
-# The Garage Problem: Real Estate Recommendations for Kings County California
+# The Garage Problem: Real Estate Recommendations for Kings County, Washington
 
 ![garage](http://nccarpentry.com/uploads/3/4/1/7/34171415/1441711_orig.jpg)
     
@@ -24,7 +24,7 @@ Given that are focus is on garages, it's important to note that there are both h
 
 # Step 2: Data Preperation
 
-In preparing the data, we focused on elements we thought would affect our numbers involving renovations broadly, and garage additions more specifically. Since we were dealing with both continuous numbers and integers, experimented with log transformations, but didn't find their adjustments useful and getting a more acurate model. To check the accuracy of our model, we focused primarily on the correlation between price per sqft of house. According to according to the website www.fixr.com the cost of building a home in California is roughly "400 and 600 per square foot." So we thought that would be a good target for checking the accuracy of our data prep.
+In preparing the data, we focused on elements we thought would affect our numbers involving renovations broadly, and garage additions more specifically. Since we were dealing with both continuous numbers and integers, experimented with log transformations, but didn't find their adjustments useful and getting a more acurate model. To check the accuracy of our model, we focused primarily on the correlation between price per sqft of house. According to according to the website [www.redfin.com](https://www.redfin.com/county/118/WA/King-County/housing-market) the average price per sqft is $453. So we thought that would be a good target for checking the accuracy of our data prep.
 
 With price as our major target, we set it as our Y and looked for correlations with the other columns as our x's.
 
