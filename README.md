@@ -1,5 +1,5 @@
 # The Garage Problem: Real Estate Recommendations for Kings County, Washington
-A Flatiron School Project
+A Flatiron School Phase 2 Project
 
 ![garage](http://nccarpentry.com/uploads/3/4/1/7/34171415/1441711_orig.jpg)
     
