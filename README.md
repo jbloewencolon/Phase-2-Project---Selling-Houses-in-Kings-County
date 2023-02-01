@@ -7,7 +7,7 @@ By Jordan Loewen-Colón October 14th 2022
 
 # The Business Problem
 
-King's County Realtors are interested in whether or not they should renovate homes before trying to sell. Specifically, they'd like to know how much adding a garage might affect price, and if so, what size of garage. However, they need the predictions within a couple days and data is limited! Location of each home is missing, and without location data (location being key for real estate!), how accurate can any model really be?
+King's County Realtors are interested in whether or not they should renovate homes before trying to sell. Specifically, they'd like to know how much adding a garage might affect price, and if so, what size of garage. However, they need the inferences within a couple days and data is limited! Location of each home is missing, and without location data (location being key for real estate!), how accurate can any model really be?
 
 # Recommendations:
 
