@@ -11,7 +11,7 @@ King's County Realtors are interested in whether or not they should renovate hom
 
 # Recommendations:
 
-Based on our models and analysis, we recommend that if rennovations are going to occur, its best to target square footage of living space, but if renovations are going to includ the garage, it is probably worth focusing on homes that have no garage and adding a 1-car sized garage, rather than increasing the size of an existing garage.
+Based on our models and analysis, we recommend that if rennovations are going to occur, its best to target square footage of living space, but if renovations are going to include the garage, it is probably worth focusing on homes that have no garage and adding a 1-car sized garage, rather than increasing the size of an existing garage.
 
 # Step 1: Data Understanding
 
@@ -21,7 +21,7 @@ The dataset has 30155 entries and 25 columns with a mix of string values, floats
 
 ![heatmap](https://github.com/jbloewencolon/Phase-2-Project---The-Garage-Problem/blob/main/Images/heatmap.JPG)
 
-Given that are focus is on garages, it's important to note that there are both houses with no garages or which have never been renovated. In narrowing down, we noticed that columns like "waterfront" and "greenbelt" had a small number of entries, so they probably would not add much to our analysis. Additionally, given time constraints, we wouldn't be able to spend time on categories like "date, view, sqft_above, sqft_basement, address, lat, and long." We ended up focusing primarily on "yr_renovated," "condition," "grade," and, especially, "sqft_living" as categories in order to build the most accurate model.
+Given that are focus is on garages, it's important to note that there are both houses with no garages or which have never been renovated. In narrowing down, we noticed that columns like "waterfront" and "greenbelt" had a small number of entries, so they probably would not add much to our analysis. Additionally, given time constraints, we wouldn't be able to spend time on categories like "date, view, sqft_above, sqft_basement." And for the sake of this excercise (and its time constraints), we are pretending "address, lat, and long" were not included in the dataset. So we ended up focusing primarily on "yr_renovated," "condition," "grade," and, especially, "sqft_living" as categories in order to build the most accurate model.
 
 # Step 2: Data Preperation
 
