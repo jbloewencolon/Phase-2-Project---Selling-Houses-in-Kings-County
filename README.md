@@ -77,6 +77,6 @@ Further questions? Contact Jordan Loewen-Colón @ jbloewen@syr.edu
 ```
 ├── data : data used for modeling
 ├── images : images used in PPT and README
-├── Microsoft Movie Studio.ipynb : notebook used to pull from API
+├── The Garage Problem.ipynb : notebook used to pull from API
 ├── README.md : project information and repository structure
 ├── presentation.pdf : the powerpoint presentation used to present data analysis
