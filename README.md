@@ -1,4 +1,4 @@
-# Solving The Garage Problem: 
+# Solving the Garage Problem: 
 ## Real Estate Recommendations for Kings County, Washington
 ![garage](http://nccarpentry.com/uploads/3/4/1/7/34171415/1441711_orig.jpg)
     
